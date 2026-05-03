@@ -1,0 +1,62 @@
+/**
+ * ===================================================
+ * VitePress 导航菜单样式文件
+ * ===================================================
+ *
+ * 功能说明：
+ * - 定义导航栏菜单项的基础样式
+ * - 配置一级菜单和下拉菜单的字体、颜色、内边距
+ * - 设置菜单项之间的分隔线样式
+ *
+ * 样式内容：
+ * 1. 一级菜单链接样式：字体大小、字重、颜色、内边距
+ * 2. 无子菜单的菜单项样式
+ * 3. 有子菜单的菜单项样式
+ * 4. 菜单项分隔线样式
+ * 5. 子菜单项样式：内边距调整
+ *
+ * 与nav-styles.css的区别：
+ * - nav-styles.css：处理弹出下拉菜单（VPMenu）的样式
+ * - nav-menu.css：处理导航栏本身（VPNavMenu）的菜单项样式
+ */
+
+/* 一级菜单链接基础样式 - 字体较小，灰色文字 */
+body nav ul.VPNavMenu li a {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #666666 !important;
+  padding: 8px 16px !important;
+}
+
+/* 无子菜单的菜单项样式 - 字体更大，加粗，黑色文字，带背景色 */
+body nav ul.VPNavMenu li:not(:has(ul)) > a {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  padding: 12px 16px !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* 有子菜单的菜单项样式 - 与无子菜单样式一致 */
+body nav ul.VPNavMenu li:has(ul) > a {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  padding: 12px 16px !important;
+  background-color: rgba(0, 0, 0, 0.03) !important;
+}
+
+/* 菜单项分隔线 - 一级菜单之间添加分割线 */
+body nav ul.VPNavMenu li + li {
+  border-top: 1px solid #e0e0e0 !important;
+}
+
+/* 子菜单内部移除分隔线 */
+body nav ul.VPNavMenu li ul li {
+  border-top: none !important;
+}
+
+/* 子菜单链接样式 - 左侧内边距增加32px，与父菜单区分 */
+body nav ul.VPNavMenu li ul li a {
+  padding-left: 32px !important;
+}

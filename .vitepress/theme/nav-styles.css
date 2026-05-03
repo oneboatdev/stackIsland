@@ -1,0 +1,41 @@
+/**
+ * ===================================================
+ * VitePress 导航栏下拉菜单样式文件
+ * ===================================================
+ *
+ * 功能说明：
+ * - 专门针对导航栏下拉菜单（VPNavBar VPNavMenu）的样式定制
+ * - 配置菜单分组标题和菜单项的层级样式
+ * - 实现二级/三级菜单的视觉区分
+ *
+ * 样式内容：
+ * 1. VPMenuGroup.title：二级菜单分组标题样式
+ * 2. VPMenu.item.label：三级菜单链接样式
+ * 3. VPMenuGroup分隔线：分组之间的视觉分割
+ *
+ * 与style.css的区别：
+ * - style.css：处理整体布局和VPDoc容器样式
+ * - nav-styles.css：专门处理VPNavBar导航菜单的弹出层样式
+ */
+
+/* 二级菜单分组标题样式 - 字体更大，加粗，黑色文字 */
+.VPMenu :deep(.VPMenuGroup .title) {
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  line-height: 32px !important;
+  padding: 0 12px !important;
+}
+
+/* 三级菜单链接样式 - 字体稍小，颜色为深灰色 */
+.VPMenu :deep(.item .label) {
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  color: #666666 !important;
+  line-height: 28px !important;
+}
+
+/* 分组之间的分割线 - 两个菜单分组之间添加分隔线 */
+.VPMenu :deep(.VPMenuGroup + .VPMenuGroup) {
+  border-top: 1px solid #e0e0e0 !important;
+}
