@@ -23,7 +23,7 @@ import sidebar from './sidebar.js'
 export default defineConfig({
   title: '栈岛 Stack Island',
   description: '分享技术与生活',
-  base: '/',
+  base: '/stackIsland/',
   head: [
     ['link', { rel: 'icon', href: '/img/logo.png' }]
   ],
