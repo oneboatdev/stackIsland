@@ -11,7 +11,7 @@
 + 元素
 + 数组的长度
 
-![数组概念](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/数组概念.png)
+![数组概念](./assets/数组概念.png)
 
 **数组的特点：**
 
