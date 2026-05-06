@@ -54,7 +54,6 @@
 /* 文档内容样式 - 移除最大宽度限制，设置水平内边距 */
 .VPDoc .content {
   max-width: none !important;
-  width: 100% !important;
   padding: 0 2rem !important;
 }
 
@@ -89,7 +88,6 @@
   /* 无侧边栏时的内容样式 */
   .VPDoc:not(.has-sidebar) .content {
     max-width: none !important;
-    width: 100% !important;
   }
 
   /* 无侧边栏时的容器样式 */

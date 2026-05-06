@@ -59,11 +59,10 @@ export default {
   ],
   '/docs/programming/java/basic-syntax/': [
     {
-      text: 'Java基础语法',
+      text: '基础语法',
       items: [
-        { text: '变量与数据类型', link: '/docs/programming/java/basic-syntax/variables' },
-        { text: '运算符', link: '/docs/programming/java/basic-syntax/operators' },
-        { text: '控制流程', link: '/docs/programming/java/basic-syntax/control-flow' },
+        { text: '变量与运算符', link: '/docs/programming/java/basic-syntax/variables' },
+        { text: '流程控制', link: '/docs/programming/java/basic-syntax/control-flow' },
         { text: '数组', link: '/docs/programming/java/basic-syntax/arrays' },
         { text: '方法', link: '/docs/programming/java/basic-syntax/methods' }
       ]
@@ -71,7 +70,7 @@ export default {
   ],
   '/docs/programming/java/collections/': [
     {
-      text: 'Java集合框架',
+      text: '集合框架',
       items: [
         { text: 'List接口', link: '/docs/programming/java/collections/list' },
         { text: 'Set接口', link: '/docs/programming/java/collections/set' },
@@ -82,7 +81,7 @@ export default {
   ],
   '/docs/programming/java/concurrency/': [
     {
-      text: 'Java并发编程',
+      text: '并发编程',
       items: [
         { text: '线程基础', link: '/docs/programming/java/concurrency/threads' },
         { text: '同步机制', link: '/docs/programming/java/concurrency/synchronization' },
@@ -103,7 +102,7 @@ export default {
   ],
   '/docs/programming/go/basic-syntax/': [
     {
-      text: 'Go基础语法',
+      text: '基础语法',
       items: [
         { text: '文章1', link: '/docs/programming/go/basic-syntax/article1' },
         { text: '文章2', link: '/docs/programming/go/basic-syntax/article2' }
@@ -112,7 +111,7 @@ export default {
   ],
   '/docs/programming/go/concurrency/': [
     {
-      text: 'Go并发模型',
+      text: '并发模型',
       items: [
         { text: 'Goroutine', link: '/docs/programming/go/concurrency/goroutine' },
         { text: 'Channel', link: '/docs/programming/go/concurrency/channel' },
@@ -122,7 +121,7 @@ export default {
   ],
   '/docs/programming/python/basic-syntax/': [
     {
-      text: 'Python基础语法',
+      text: '基础语法',
       items: [
         { text: '文章1', link: '/docs/programming/python/basic-syntax/article1' },
         { text: '文章2', link: '/docs/programming/python/basic-syntax/article2' }

@@ -1,0 +1,242 @@
+# 什么是流程控制
+
+流程控制语句时用来控制程序中各_语句执行循序_的语句，可以把语句组合成能_完成一定功能_的小逻辑模块。程序设计中规定了三种流程结构。
+
++ 顺序结构
+    - 程序从上到下逐行执行，中间没有任何判断和跳转。
++ 分支结构
+    - 根据条件，选择性地执行某段代码。
+    - 有if_else和switch-case两种分支语句。
++ 循环结构
+    - 根据循环条件，重复性的执行某段代码。
+    - 有for、while、do-while三种循环语句。
+
+# 顺序结构
+顺序结构就是程序_从上到下逐行_地执行。表达式语句都是顺序执行的。并且上一行对某个变量的修改对下一行会产生影响。
+
+```java
+public class StatementTest{
+    public static void main(String[] args){
+        int x = 1;
+        int y = 2;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        // 对x、y的值进行修改
+        x++;
+        y = 2 * x + y;
+        x = x * 10;
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+    }
+}
+```
+
+# 分支语句
+## if-else条件判断结构
+### 基本语法
+**结构1：单分支条件判断：if**
+
+- 格式
+
+```java
+if(条件表达式){ // 条件表达式必须是布尔类型（关系表达式或逻辑表达式）或布尔变量
+    语句块;
+}
+```
+
+- 执行流程
+
+![单分支条件判断if](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/单分支条件判断if.png)
+
+**结构2：双分支条件判断：if-else**
+
+- 格式：
+
+```java
+if(条件表达式){
+    语句块1;
+}else{
+    语句块2;
+}
+```
+
+- 执行流程：
+
+![双分支条件判断：if-else](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/双分支条件判断：if-else.png)
+
+**结构3：多分支条件判断：if-else if-else**
+
+- 格式：
+
+```java
+if(条件表达式1){
+    语句块1;
+}else if(条件表达式2){
+    语句块2;
+}else if(条件表达式n){
+    语句块n;
+}else{
+    语句块n+1;
+}
+```
+
+> 一旦条件表达式为true，则进入执行相应的语句块。执行完对应的语句块后，跳出当前结构。
+>
+
+- 执行流程：
+
+![多分支条件判断if-else-if-else](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/多分支条件判断if-else-if-else.png)
+
+### if-else嵌套
+在if语句块中，或者是在else语句块中，有包含了另外一个条件判断（可以是单分支、双分支、多分支），就构成了**嵌套结构**。
+
+**执行的特点**：
+
+1. 如果是嵌套在if语句块中，只有当外部的if条件满足时，才会去判断内部的条件
+2. 如果是嵌套在else语句块中，只有当外部的if条件不满足，进入else后，才会去判断内部的条件。
+
+## switch-case选择结构
+### 基本语法
++ 语法格式：
+
+```java
+switch(表达式){
+    case 常量值1:
+        语句块1;
+        break;
+    case 常量值2:
+        语句块2;
+        break;
+    default:
+        语句块n+1;
+        break;
+}
+```
+
++ 执行流程图
+
+![switch-case选择结构](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/switch-case选择结构.png)
+
+### 使用注意点
++ switch(表达式)中表达式的值必须是以下几种类型之一：byte、short、char、int、枚举(jdk5.0、String(jdk7.0)
++ case子句中的值必须是常量，不能是变量名或不确定的表达式的值或范围
++ 同一个switch语句，所有case子句中的常量值互不相同
++ break语句用来在执行完一个case分支后使程序跳出switch语句块，如果没有break，程序会顺序执行到switch结尾；
++ default子句是可选的，同时位置也是灵活的。当没有匹配的case时，执行defalut语句。
++ 在switch语句中，如果case的后面不写break，将出现**穿透现象**，也就是一旦匹配成功，不会在判断下一个case的值，直接向后运行，直到遇到break或者整个switch语句结束，执行终止。
+
+## if-else语句与switch-case语句比较
++ 结论：凡是使用switch-case的结构都可以转换为if-else结构。反之则不成立。
++ 对比：
+    - if语句的条件是一个布尔类型值，if条件表达式为true则进入分支，可以用于范围的判断，可以用于等值的判断，_使用范围更广_。
+    - switch语句的条件是一个常量值，只能判断某个变量或表达式的结果是否等于某个常量值，_使用场景较狭窄_。
+    - 当条件是判断某个变量或表达式是否等于某个固定的常量值时，习惯上使用switch更多，因为效率稍高。
+
+# 循环语句
++ 循环语句具有在_某些条件满足的情况下，反复执行_特定代码的功能。
++ 循环结构的分类：
+    - for循环
+    - while循环
+    - do-while循环
++ 循环结构的四要素：
+    - 初始化部分
+    - 循环条件部分
+    - 循环体部分
+    - 迭代部分
+
+## for循环
+### 基本语法
++ 语法格式：
+
+```java
+for(初始化部分;循环条件部分;迭代部分){
+    循环体部分;
+}
+```
+
++ 执行过程：初始化部分->循环条件部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->...->循环条件部分
+
+![for循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/for循环.png)
+
+### 说明
++ for(;;)中的两个分号不能少也不能多
++ 初始化部分可以声明多个变量，但必须是同一个类型，用逗号分隔
++ 循环条件部分为boolean类型表达式，当值为false时，退出循环
++ 迭代部分可以有多个变量更新，用逗号分隔
+
+## while循环
+### 基本语法
++ 语法格式：
+
+```java
+初始化部分;
+while(循环条件部分){
+    循环体部分;
+    迭代部分;
+}
+```
+
++ 执行过程：初始化部分->循环条件部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->...->循环条件部分
+
+![for循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/for循环-8069369.png)
+
+### 说明
++ while(循环条件)中循环条件必须是boolean类型
++ 迭代部分不能省略，否则循环将不能结束，变成死循环。
++ for循环和while循环可以互相转换。二者没有性能上的差别。
++ for循环与while循环的区别在于：初始化条件部分的作用域不同。
+
+## do-while循环
+### 基本语法
++ 语法格式：
+
+```java
+初始化部分;
+do{
+    循环体部分;
+    迭代部分;
+}while(循环条件部分);
+```
+
++ 执行过程：初始化部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->循环条件部分->...->循环条件部分
+
+![do-while循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/do-while循环.png)
+
+### 说明
++ 结尾while(循环条件)中循环条件必须是boolean类型
++ do{}while();最后有一个分号用来结束语句
++ do-while结构的循环体语句是至少会执行一次，这个和for以及while是不一样的
++ 循环的三个结构for、while、do-while三者是可以相互转换的
+
+## 对比三种循环结构
+### 三种循环结构都具有四个要素
++ 循环变量的初始条件
++ 循环条件
++ 循环体语句块
++ 循环变量修改的迭代表达式
+
+### 循环次数
++ do-while循环至少执行一次循环体语句
++ for和while循环先判断循环条件是否成立，然后决定是否执行循环体
+
+### 选择场景
++ 遍历有明显的循环次数(范围)需求，选择for循环
++ 遍历没有明显的循环次数（范围）需求，选择while循环
++ 如果循环体语句块至少执行一次，可以考虑使用do-while循环
++ 本质上：三种循环之间完全可以互相转换，都能实现循环的功能
+
+## “无限”循环
++ 语法格式：
+
+最简单的“无限”循环格式：while(true)、for(;;)
+
++ 适用场景：
+    - 开发中，有时并不确定需要循环多少次，需要根据循环体内部某些条件，来控制循环的结束（使用break）
+    - 如果次循环结构不能终止，则构成了死循环。
+
+## break和continue的说明
+| 关键字 | 适用范围 | 在循环结构中的作用 | 相同点 |
+| --- | --- | --- | --- |
+| break | switch-case循环结构 | 一旦执行，就结束或跳出**当前**循环结构 | break后边不能声明语句 |
+| continue | 循环结构 | 一旦执行，就结束或跳出**当次**循环结构 | contnue后边不能声明语句 |
+

@@ -27,10 +27,17 @@ export default defineConfig({
   head: [
     ['link', { rel: 'icon', href: '/img/logo.png' }]
   ],
+  markdown: {
+    math: true
+  },
   themeConfig: {
     logo: '/img/logo.png',
     nav,
     sidebar,
+    outline: {
+      level: [1, 2, 3, 4],
+      label: '页面导航'
+    },
     socialLinks: [
       { icon: 'github', link: 'https://github.com' }
     ]
