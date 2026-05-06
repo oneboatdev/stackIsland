@@ -39,7 +39,7 @@ export default [
       {
         text: 'Java',
         items: [
-          { text: '基础语法', link: '/docs/programming/java/basic-syntax/variables' },
+          { text: '基础语法', link: '/docs/programming/java/basic-syntax/' },
           { text: '集合框架', link: '/docs/programming/java/collections/' },
           { text: '并发编程', link: '/docs/programming/java/concurrency/' },
           { text: 'JVM', link: '/docs/programming/java/jvm/' },
