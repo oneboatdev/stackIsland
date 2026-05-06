@@ -76,7 +76,7 @@ Java中变量的数据类型分为两大类：
 
 + **基本数据类型:** 整型、浮点型、字符类型、布尔类型。
 + **引用数据类型:** 数组、类、接口、枚举、注解、记录。
-  ![Java中数据类型](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/Java中数据类型.png)
+  ![Java中数据类型](./assets/Java中数据类型.png)
 
 ## 变量的使用
 + 声明：
@@ -199,7 +199,7 @@ boolean类型用来判断逻辑条件，一般用于流程控制语句中。bool
 
 基本数据类型的转换规则：
 
-![自动类型提升](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/自动类型提升.png)
+![自动类型提升](./assets/自动类型提升.png)
 
 + 当把存储范围小的值（常量值、变量的值、表达式计算的结果值）赋值给了存储范围大的变量时：
 

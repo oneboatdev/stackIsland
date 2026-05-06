@@ -46,7 +46,7 @@ if(条件表达式){ // 条件表达式必须是布尔类型（关系表达式�
 
 - 执行流程
 
-![单分支条件判断if](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/单分支条件判断if.png)
+![单分支条件判断if](./assets/单分支条件判断if.png)
 
 **结构2：双分支条件判断：if-else**
 
@@ -62,7 +62,7 @@ if(条件表达式){
 
 - 执行流程：
 
-![双分支条件判断：if-else](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/双分支条件判断：if-else.png)
+![双分支条件判断：if-else](./assets/双分支条件判断：if-else.png)
 
 **结构3：多分支条件判断：if-else if-else**
 
@@ -85,7 +85,7 @@ if(条件表达式1){
 
 - 执行流程：
 
-![多分支条件判断if-else-if-else](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/多分支条件判断if-else-if-else.png)
+![多分支条件判断if-else-if-else](./assets/多分支条件判断if-else-if-else.png)
 
 ### if-else嵌套
 在if语句块中，或者是在else语句块中，有包含了另外一个条件判断（可以是单分支、双分支、多分支），就构成了**嵌套结构**。
@@ -115,7 +115,7 @@ switch(表达式){
 
 + 执行流程图
 
-![switch-case选择结构](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/switch-case选择结构.png)
+![switch-case选择结构](./assets/switch-case选择结构.png)
 
 ### 使用注意点
 + switch(表达式)中表达式的值必须是以下几种类型之一：byte、short、char、int、枚举(jdk5.0、String(jdk7.0)
@@ -156,7 +156,7 @@ for(初始化部分;循环条件部分;迭代部分){
 
 + 执行过程：初始化部分->循环条件部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->...->循环条件部分
 
-![for循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/for循环.png)
+![for循环](./assets/for循环.png)
 
 ### 说明
 + for(;;)中的两个分号不能少也不能多
@@ -178,7 +178,7 @@ while(循环条件部分){
 
 + 执行过程：初始化部分->循环条件部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->...->循环条件部分
 
-![for循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/for循环-8069369.png)
+![for循环](./assets/for循环-8069369.png)
 
 ### 说明
 + while(循环条件)中循环条件必须是boolean类型
@@ -200,7 +200,7 @@ do{
 
 + 执行过程：初始化部分->循环体部分->迭代部分->循环条件部分->循环体部分->迭代部分->循环条件部分->...->循环条件部分
 
-![do-while循环](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/do-while循环.png)
+![do-while循环](./assets/do-while循环.png)
 
 ### 说明
 + 结尾while(循环条件)中循环条件必须是boolean类型
