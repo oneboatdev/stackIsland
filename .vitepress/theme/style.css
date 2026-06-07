@@ -178,3 +178,37 @@
     0 12px 32px rgba(0, 0, 0, 0.1),
     0 4px 12px rgba(0, 0, 0, 0.06);
 }
+
+/* 标题间距优化 - 减少一级标题后紧跟二级标题的空隙 */
+.VPDoc .content h1 + h2 {
+  margin-top: 0.5em !important;
+}
+
+/* 标题间距优化 - 减少所有标题间的垂直间距 */
+.VPDoc .content h1,
+.VPDoc .content h2,
+.VPDoc .content h3,
+.VPDoc .content h4 {
+  margin-top: 1.2em !important;
+  margin-bottom: 0.6em !important;
+}
+
+/* 特别处理一级标题后的二级标题间距 */
+.VPDoc .content h1 + h2 {
+  margin-top: 0.3em !important;
+}
+
+/* 防止标题与上文内容间距过大 */
+.VPDoc .content > *:first-child {
+  margin-top: 0 !important;
+}
+
+/* 修复一级标题与页面顶部的空隙 */
+.VPDoc .content {
+  padding-top: 0 !important;
+}
+
+/* 确保一级标题顶部无额外边距 */
+.VPDoc .content h1:first-child {
+  margin-top: 0 !important;
+}

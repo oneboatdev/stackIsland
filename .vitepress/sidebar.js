@@ -64,7 +64,13 @@ export default {
         { text: '变量与运算符', link: '/docs/programming/java/basic-syntax/variables' },
         { text: '流程控制', link: '/docs/programming/java/basic-syntax/control-flow' },
         { text: '数组', link: '/docs/programming/java/basic-syntax/arrays' },
-        { text: '方法', link: '/docs/programming/java/basic-syntax/methods' }
+        { text: '面向对象', link: '/docs/programming/java/basic-syntax/objectOriented' },
+        { text: '异常与断言', link: '/docs/programming/java/basic-syntax/exceptions' },
+        { text: '泛型', link: '/docs/programming/java/basic-syntax/generics' },
+        { text: '常用类和基础API', link: '/docs/programming/java/basic-syntax/common-classes-and-apis'},
+        { text: '网络编程', link: '/docs/programming/java/basic-syntax/network-programming' },
+        { text: 'File类与IO流', link: '/docs/programming/java/basic-syntax/file-io' },
+        { text: '反射', link: '/docs/programming/java/basic-syntax/reflection' }
       ]
     }
   ],
