@@ -283,7 +283,7 @@ public class UserDAOImpl implements BaseDAO<User> {
 
 通配符主要有三种形态：
 
-1. **无界通配符**`**<?>**`**：啥都行，但只能读：**
+1. **无界通配符`<?>`：啥都行，但只能读：**
 
 `<?>`代表任意未知的类型。它最常用于只读的场景，比如打印集合、判断集合是否为空。
 
@@ -300,7 +300,7 @@ public static void printList(List<?> list) {
 }
 ```
 
-2. **上界通配符**`**<? extends T>**`**：只进不出（生产者Producer）**
+2. **上界通配符`<? extends T>`：只进不出（生产者Producer）**
 
 它表示“T或者T的某个子类”。当需要从集合中**读取数据**时，可以使用。
 
@@ -319,7 +319,7 @@ public static double sum(List<? extends Number> list) {
 }
 ```
 
-3. **下界通配符**`**<? super T>**`**：只进不出（消费者Consumer）**
+3. **下界通配符`<? super T>`：只进不出（消费者Consumer）**
 
 它表示“T或者T的某个父类”。当需要向集合中**写入数据**时，可以使用。
 

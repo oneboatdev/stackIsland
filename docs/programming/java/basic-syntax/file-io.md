@@ -370,10 +370,10 @@ ois.close();
 为了简化 IO 开发，可以使用 Apache 的 `commons-io` 包。
 
 ## 核心工具类
-+ `**IOUtils**`：
++ **`IOUtils`**：
     - `IOUtils.copy(InputStream, OutputStream)`：一行代码实现文件复制。
     - `IOUtils.closeQuietly(stream)`：安静地关闭流，自动处理异常。
-+ `**FileUtils**`：
++ **`FileUtils`**：
     - `FileUtils.copyFile(src, dest)`：文件复制。
     - `FileUtils.copyDirectoryToDirectory(src, dest)`：目录复制（递归）。
     - `FileUtils.readFileToString(file)`：直接读取文件内容为字符串。

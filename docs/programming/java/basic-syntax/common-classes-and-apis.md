@@ -45,7 +45,7 @@ public void testStringConcat() {
 }
 ```
 
-**特殊情况**：`final`**修饰的变量**
+**特殊情况：`final`修饰的变量**
 
 如果一个变量被`final`修饰，它在编译期就被视为常量。
 
