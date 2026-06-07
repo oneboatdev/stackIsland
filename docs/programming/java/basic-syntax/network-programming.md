@@ -6,10 +6,10 @@
 
 + **C/S架构（Client/Server）**：即客户端/服务端架构。这种模式要求用户在本地设备上安装专门的客户端软件，例如QQ、微信或各类手机App。客户端负责与用户交互，并与远程服务器通信。其优势在于可以提供更丰富的功能和更佳的用户体验。
 
-  ![C_S架构](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/C_S架构.png)
+  ![C_S架构](./assets//C_S架构.png)
 
 + **B/S架构（Browser/Server）**：即浏览器/服务器架构。用户只需要通过浏览器即可访问服务，例如日常使用的各种网站。其优势在于无需安装和维护客户端，升级和部署非常方便。
-  ![B_S架构](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/B_S架构.png)
+  ![B_S架构](./assets//B_S架构.png)
 
 无论采用哪种架构，其本质都是**网络编程**，即在特定协议的约束下，实现两台或多台计算机之间的数据通信。网络编程的本质，就是在特定协议规范下，实现计算机之间的数据交换。
 
@@ -34,7 +34,7 @@ IP地址还可按用途分为**公网地址**（全球唯一，用于互联网�
 **域名**的出现是因为IP地址难以记忆。域名系统（DNS）负责将人类易记的域名（如`www.oneboatdev.com`）转换为计算机可识别的IP地址。这个解析过程涉及本地hosts文件、本地DNS缓存、根DNS服务器等多级查询机制。
 
 **域名解析过程：**
-![域名解析](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/域名解析.png)
+![域名解析](./assets/域名解析.png)
 
 **代码示例：使用**`**InetAddress**`**类**
 

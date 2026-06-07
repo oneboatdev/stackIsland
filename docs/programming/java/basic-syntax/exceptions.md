@@ -7,7 +7,7 @@ Java中使用**异常**这种面相对象的方式来处理错误，通过异常
 ## 异常的体系结构
 Java的所有的异常都继承自`java.lang.Throwable`类。
 
-![异常的体系结构](/Users/weixinsun/project/blog/stackIsland/docs/programming/java/basic-syntax/assets/异常的体系结构.png)
+![异常的体系结构](./assets/异常的体系结构.png)
 
 **Throwable**
 
